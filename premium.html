@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Obfuscator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
+</head>
+<body class="premium-theme">
+  <div class="container premium-box">
+    <h1 class="title premium-title">🌟 Premium Obfuscator</h1>
+    <div id="login-section">
+      <input id="premium-code" class="textarea" placeholder="ใส่รหัสพรีเมียม">
+      <button onclick="loginPremium()" class="btn premium-btn">เข้าสู่ระบบ</button>
+    </div>
+
+    <div id="premium-section" style="display: none;">
+      <textarea id="premium-input" class="textarea" placeholder="วางโค้ด Python..."></textarea>
+      <button onclick="obfuscatePremium()" class="btn premium-btn">⚙️ Obfuscate (30 ชั้น)</button>
+
+      <div id="premium-result-box" style="display: none;">
+        <textarea id="premium-output" class="textarea" readonly></textarea>
+        <button onclick="copyPremiumResult()" class="btn premium-btn">📋 คัดลอก</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
